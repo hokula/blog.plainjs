@@ -1,0 +1,142 @@
+body {
+	background-image: url('src/background-image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+}
+.login-form {
+	width: 300px;
+	background-color: #fff;
+	border-radius:10px;
+	padding: 20px;
+	margin: 5% auto; 
+	display: none;
+}
+#register-form {
+    display: none;
+}
+.login-form input, .blog-area input
+ {
+	display: block;
+	width: 100%;
+	padding: 7px;
+	margin-bottom: 15px;
+	border-radius: 6px;
+	border: none;
+	border-bottom: 2px solid rgb(92, 89, 89);
+	outline: none;
+}
+
+.login-form h1 {
+	text-align: center;
+	font-size: 42px;
+	margin: 55px 0;
+}
+.login-btn, .register-btn-main, .blog-post-btn {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	border: none;
+	margin-top: 30px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(9,9,121,1) 61%);
+}
+.blog-post-btn {
+	width: 20%;
+	background: #1e2c4e;
+}
+.login-btn:hover,
+.register-btn:hover,
+.register-btn-main:hover,
+.blog-post-btn:hover {
+	opacity: .7;
+	cursor: pointer;
+}
+.blog-post-btn:hover {
+	color: #1e2c4e;
+	background-color: #fff;
+}
+#user-name {
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+.login-form p
+ {
+	text-align: center;
+	margin-top: 30px;
+}
+p a {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 400;
+}
+.error-msg {
+	font-size: 22px;
+	color: #f00;
+	font-weight: 400px;
+	display: none;
+}
+.nav {
+	height: 70px;
+	background-color: #1e2c4e;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+.blog-area {
+	top: 70px;
+	width: 800px;
+	margin: auto;
+	padding: 20px;
+	position: relative;
+}
+.posted-blog {
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, .7);
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 18px;
+}
+.user-info {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	top: 0;
+	right: 20px;
+	padding: 10px 4px;
+}
+.logout-block {
+	display: flex;
+	align-items: center;
+	padding: 10px 4px;
+}
+.logout-block span, img, button {
+	margin-right: 15px;
+}
+.blog-delete-btn {
+	border: none;
+	background-color: transparent;
+	border-radius: 4px;
+}
+.blog-delete-btn:hover {
+	color: red;
+}
+.wrapper {
+	display: block;
+}
+.like-icons {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 7px;
+}
+.like-icons i:hover {
+	cursor: pointer;
+}
